@@ -1,0 +1,32 @@
+python "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\src\\train_model.py" -c "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\config\\config-bert.txt" -train "C:\Users\CSE RGUKT\Downloads\TTS\TTS\TTS_zeroshot\data\raw_train_all_subset10_onecol.csv" -dev "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\data\\raw_val_all_onecol.csv" -test "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\data\\raw_test_all_onecol.csv" -kg "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\data\\raw_train_all_subset10_kg_epoch_led_onecol.csv" -g 0 -s 0 -d 0.1 -d2 0.7 -step 3 -es_step 5 --clipgradient True
+
+
+
+
+bash "C:\Users\CSE RGUKT\Downloads\TTS\TTS\TTS_zeroshot\src\train_LEDaug_BART_10train_tune_tensorboard_5.sh" "C:\Users\CSE RGUKT\Downloads\TTS\TTS\TTS_zeroshot\config\config-bert.txt"
+
+
+
+
+python "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\src\\train_model.py" -c "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\config\\config-bert.txt" -train "C:\Users\CSE RGUKT\Downloads\vast_train.csv" -dev "C:\Users\CSE RGUKT\Downloads\vast_dev.csv" -test "C:\Users\CSE RGUKT\Downloads\vast_test.csv" -kg "C:\Users\CSE RGUKT\Downloads\vast_dev.csv" -g 0 -s 0 -d 0.1 -d2 0.7 -step 3 -es 5 --clipgradient True
+
+
+python "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\src\\train_model.py" -c "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\config\\config-bert.txt" -train "C:\Users\CSE RGUKT\Downloads\TTS\TTS\TTS_zeroshot\data\raw_train_all_onecol.csv" -dev "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\data\\raw_val_all_onecol.csv" -test "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\data\\raw_test_all_onecol.csv" -kg "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\data\\raw_train_all_subset_kg_epoch_led_onecol.csv" -g 1 -s 0 -d 0.1 -d2 0.7 -step 3 -es_step 5 --clipgrad True
+
+
+python "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\src\\train_model.py" -c "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\config\\config-bert.txt" -train "C:\Users\CSE RGUKT\Downloads\Target Generation-20241224T130042Z-001\Target Generation\train_data.csv" -dev "C:\Users\CSE RGUKT\Downloads\Target Generation-20241224T130042Z-001\Target Generation\val_data.csv" -test "C:\Users\CSE RGUKT\Downloads\Target Generation-20241224T130042Z-001\Target Generation\test_data.csv" -kg "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\data\\raw_train_all_subset10_kg_epoch_led_onecol.csv" -g 0 -s 0 -d 0.1 -d2 0.7 -step 3 -es_step 5 --clipgrad True
+
+python "C:\Users\CSE RGUKT\Downloads\TTS\TTS\TTS_zeroshot\src\train_model.py" -c "C:\Users\CSE RGUKT\Downloads\TTS\TTS\TTS_zeroshot\config\config-bert.txt" - train "C:\Users\CSE RGUKT\Downloads\TTS\TTS\TTS_zeroshot\data\raw_train_all_onecol.csv" -dev "C:\Users\CSE RGUKT\Downloads\TTS\TTS\TTS_zeroshot\data\raw_val_all_onecol.csv" - test "C:\Users\CSE RGUKT\Downloads\TTS\TTS\TTS_zeroshot\data\raw_test_all_onecol.csv" -kg "TTS/TTS_zeroshot/data/raw_train_all_subset_kg_epoch_onecol.csv"
+
+
+
+
+
+
+
+
+python "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\src\\train_model.py" -c "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\config\\config-bert.txt" -train "C:\Users\CSE RGUKT\Downloads\TTS\TTS\TTS_zeroshot\data\raw_train_all_onecol.csv" -dev "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\data\\raw_val_all_onecol.csv" -test "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\data\\raw_test_all_onecol.csv" -kg "C:\\Users\\CSE RGUKT\\Downloads\\TTS\\TTS\\TTS_zeroshot\\data\\raw_train_all_subset10_kg_epoch_led_onecol.csv" -g 1 -s 0 -d 0.1 -d2 0.7 -step 3 -es_step 5 --clipgrad True
+
+
+Shell File-
+bash ./train_LEDaug_BART_10train_tune_tensorboard_5.sh ../config/config-bert.txt
