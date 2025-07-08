@@ -10,9 +10,9 @@ cd ./ZSSD/stance_detection_zeroshot/src
 ```
 For 10% training setting:
 ```
-bash ./train_LEDaug_BART_10train_tune_tensorboard_5.sh > train_LEDaug_BART_10train_tune_tensorboard_5_results.log 2>&1 & 
+bash ./train_LEDaug_BART_10train_tune_tensorboard_5.sh ../config/config-bert.txt 
 ```
 For 100% training setting:
 ```
-nohup bash ./train_LEDaug_BART_100train_tune_tensorboard_5.sh > train_LEDaug_BART_100train_tune_tensorboard_5_results.log 2>&1 &
+bash ./train_LEDaug_BART_100train_tune_tensorboard_5.sh ../config/config-bert.txt
 ```
